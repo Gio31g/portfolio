@@ -11,22 +11,51 @@ body {
 }
 
 /* HEADER */
+/* NAVIGATION */
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links,
+.nav-links {
+    display: flex;
+    gap: 36px;
+}
+
+.nav_links a,
+.nav-links a {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav_links a:hover,
+.nav-links a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+/* HEADER */
 
 .header {
     background-color: #C00F0C;
-    padding: 12px 24px;
     border-radius: 999px;
-    padding: 20px 60px;
+    padding: 16px 48px;
+    margin: 20px 40px; /* Gives it breathing room inside the page */
 }
 
-
-header img {
-  width: 100px; 
-  height: 100px;
+.header img {
+    width: 70px; 
+    height: 70px;
+    object-fit: contain;
 }
-
-
 
 /* NAVIGATION */
 .navigation {
@@ -37,14 +66,22 @@ header img {
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 36px;
 }
 
 .nav-links a {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;         /* Pure white text */
+    text-decoration: none;  /* Removes underline */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover Effect for Navigation Links */
+.nav-links a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
 }
 
 
@@ -187,3 +224,203 @@ header img {
     object-fit: contain;
 }
 
+/* PROJECTS SECTION */
+
+.projects-section {
+    padding: 80px 60px;
+}
+
+.projects-section .section-heading h2 {
+    font-family: "Italiana", serif;
+    font-size: 96px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* PROJECTS SECTION INTERACTIONS */
+
+.project-card {
+    background-color: #162B4D;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 56px 48px; /* Taller card with increased padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Shadow & Lift on Hover */
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Card State when Clicked */
+.project-card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+    font-family: "Italiana", serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* SCROLLABLE FULL-IMAGE PREVIEW */
+
+.project-preview {
+    width: 100%;
+    height: 520px;           /* Increased height for a taller preview window */
+    overflow-y: auto;        /* Lets users scroll through the full screenshot */
+    border-radius: 12px;
+    margin-bottom: 40px;     /* Extra space below the image preview */
+    background-color: #0B1D33;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Clean scrollbar styling */
+.project-preview::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-preview::-webkit-scrollbar-track {
+    background: #0B1D33;
+    border-radius: 0 12px 12px 0;
+}
+
+.project-preview::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.project-preview::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.project-preview img {
+    width: 100%;
+    height: auto;           /* Keeps the full proportions of the image uncropped */
+    display: block;
+}
+
+.project-description {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 32px;     /* Breathing room below description text */
+}
+
+.project-tech {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 48px;     /* Breathing room between tech list and buttons */
+    color: #E2E8F0;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;               /* Spacing between individual buttons */
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.project-buttons .button {
+    background-color: #C00F0C;
+    color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 0;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button Light Blue on Hover */
+.project-buttons .button:hover {
+    background-color: #38BDF8; /* Light blue */
+    color: #0B1D33;           /* Dark text for high contrast */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+/* Button Light Blue when Clicked (:active) */
+.project-buttons .button:active {
+    background-color: #38BDF8;
+    color: #0B1D33;
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(56, 189, 248, 0.3);
+}
+
+/* FOOTER SECTION */
+
+.footer {
+    background-color: #C00F0C;
+    padding: 60px 80px;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-copyright,
+.footer-subtitle,
+.footer-built {
+    font-family: "Italiana", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Italiana", serif;
+    font-size: 28px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+    transform: translateX(-4px);
+}
+
+.social-link img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
