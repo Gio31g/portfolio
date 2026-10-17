@@ -172,3 +172,18 @@ header img {
     margin-bottom: 8px;
 }
 
+/* SKILLS CARD ICONS */
+
+.card-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.card-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
