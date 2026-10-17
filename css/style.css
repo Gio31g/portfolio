@@ -142,15 +142,27 @@ body {
     margin-bottom: 100px;
     padding: 0 50px;
 }
-
 .hero-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     font-family: "Inter", sans-serif;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 20px;
-    text-align: center;
     width: 100%;
 }
+
+.status-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #22C55E;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #22C55E;
+    display: inline-block;
+}
+
 
 .hero-image img {
     width: 500px;
@@ -440,4 +452,213 @@ body {
     width: 36px;
     height: 36px;
     object-fit: contain;
+}
+
+/* CONTACT PAGE LAYOUT */
+
+.contact-page {
+    padding: 60px 80px;
+}
+
+.contact-header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    transition: opacity 0.2s ease;
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+}
+
+.contact-main-title {
+    font-family: "Italiana", serif;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.contact-subtitle {
+    font-family: "Italiana", serif;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CARDS */
+
+.contact-info-card,
+.contact-form-card {
+    background-color: #162B4D;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-card h2,
+.contact-form-card h2 {
+    font-family: "Italiana", serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.contact-prompt {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.contact-detail {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.detail-label {
+    font-family: "Italiana", serif;
+    font-size: 28px;
+}
+
+.detail-value {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #93C5FD;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.detail-value:hover {
+    text-decoration: underline;
+}
+
+/* AVAILABILITY BADGE */
+
+.availability-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+}
+
+.status-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #22C55E;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #22C55E;
+}
+
+/* FORM FIELDS */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    font-family: "Italiana", serif;
+    font-size: 28px;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #FFFFFF;
+    color: #0B1D33;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94A3B8;
+}
+
+.submit-button {
+    background-color: #C00F0C;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #38BDF8;
+    color: #0B1D33;
+}
+
+/* ABOUT PAGE STYLES */
+
+.about-page {
+    padding: 60px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.about-section h2 {
+    font-family: "Italiana", serif;
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    background-color: #162B4D;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.about-card p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #FFFFFF;
 }
