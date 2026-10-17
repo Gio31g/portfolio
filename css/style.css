@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B1D33;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+/* HEADER */
+
+
+.header {
+    background-color: #C00F0C;
+    padding: 12px 24px;
+    border-radius: 999px;
+    padding: 20px 60px;
+}
+
+
+header img {
+  width: 100px; 
+  height: 100px;
+}
+
+
+
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    padding: 120px 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero h1 {
+    font-family: "Italiana", serif;
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-content h2 {
+   font-size: 90px;
+}
+
+.about-section h2 {
+    margin-bottom: 40px;
+    padding: 0 50px;
+}
+
+.hero-description {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    max-width: none;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.hero-label {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translateY(-100px);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.primary-button {
+    background-color: #C00F0C;
+    color: #FFFFFF;
+}
+
+.secondary-button {
+    background-color: #C00F0C;
+    color: #FFFFFF;
+    margin-left: auto;
+}
+
+
+/* SKILLS SECTION */
+
+.skills-section .section-heading{
+    font-family: "Italiana", serif;
+    font-size: 96px;
+    font-weight: 400;
+    text-align: center;
+}
+.skills-section {
+    padding: 64px 60px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.skill-card {
+    background-color: #162B4D;
+    padding: 16px;
+}
+
+.skill-card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.skill-card ul {
+    padding-left: 24px;
+}
+
+.skill-card li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
