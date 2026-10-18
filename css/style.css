@@ -662,3 +662,95 @@ body {
     line-height: 1.6;
     color: #FFFFFF;
 }
+
+/* CASE STUDY PAGE STYLES  */
+.back-button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain; 
+}
+
+.case-study-page {
+    padding: 60px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.case-study-title {
+    font-family: "Italiana", serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.case-study-hero {
+    width: 100%;
+    margin: 40px 0 60px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.case-study-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.case-study-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.screenshots-list {
+    margin-top: 12px;
+    margin-left: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0; 
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+/* SCREENSHOTS GRID */
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0 40px 0;
+}
+
+.screenshot-card {
+    background-color: #162B4D;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.screenshot-card-full {
+    grid-column: 1 / -1;
+}
